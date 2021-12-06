@@ -19,7 +19,7 @@ function optionMenu(){
         availableBal += deposit;
         alert(`You have successfully deposited ${deposit}, You now have ${this.availableBal}`); 
         toContinue();
-    }else if(atm_functions==3){
+    }else if(atm_functions == 3){
         var withdrawal = parseInt(prompt(`How much do you want to withdrawal?`));
         if (isNaN(withdrawal) || withdrawal === " ") {
             alert('Error: please enter a number!');
@@ -28,11 +28,11 @@ function optionMenu(){
         availableBal -= withdrawal;
         alert(`You have successfully deposited ${withdrawal}, You now have ${this.availableBal}`);
         toContinue();
-    }else if(atm_functions==4){
+    }else if(atm_functions == 4){
         var fullName = window.prompt(`Enter your name : `);
         alert(`Account name is ${fullName}`);
         toContinue();
-    }else if(atm_functions==4){
+    }else if(atm_functions == 5){
         Exit();
     }else{
         alert("Please make a valid selection");
